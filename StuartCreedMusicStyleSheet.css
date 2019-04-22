@@ -1,0 +1,97 @@
+/*Background*/
+            
+    body {
+        background-color: whitesmoke;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+            
+/*Fixed Header*/
+                
+        .MenuItem {
+            font-size: 25px;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0px 50px 0px 50px;
+        }
+
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            -webkit-box-shadow: 0 6px 5px rgba(57, 63, 72, 0.3);
+            -moz-box-shadow: 0 6px 5px rgba(57, 63, 72, 0.3);
+            box-shadow: 0 6px 5px rgba(57, 63, 72, 0.3);
+            background-color: whitesmoke;
+            text-align: center;
+        }
+            
+        .MenuItemLinks {
+            text-decoration: none;
+            color: #006E6D;
+            -webkit-transition: 0.5s all ease;
+            -moz-transition: 0.5s all ease;
+            -o-transition: 0.5s all ease;
+            transition: 0.5s all ease;
+        }
+
+    /*Hover effects*/
+
+        .MenuItemLinks:hover{
+            color: #FC4A1A; 
+        }
+
+
+/*Content Container*/
+
+    #ContentContainer {
+        margin-top: 63px;
+    }
+
+/*Music*/
+
+    #SpotifyFramesContainer {
+        margin: 100px 0px 0px 0px;
+        display: inline-block;
+    }
+
+    #SpotifyFramesContainerOuter {
+        text-align: center;
+    }
+
+/*Soundcloud*/
+
+    #SoundcloudFramesContainer {
+        margin: 100px 0px 0px 0px;
+        display: inline-block;
+    }
+
+    #SoundcloudContainerOuter {
+        text-align: center;
+    }
+
+/*Info*/
+
+    #InfoPhotoFramesContainer {
+        margin: 30px 0px 0px 0px;
+        display: inline-block;
+    }
+
+    #InfoPhotoFramesContainerOuter {
+        text-align: center;
+    }
+
+    .InfoPictures {
+        height: 300px;
+        width: auto;
+        margin: 10px;
+    }
+
+/*Website content*/
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #FC4A1A; 
+    }
