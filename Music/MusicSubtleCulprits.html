@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Stuart Creed Music</title>
+        
+        <meta name="description" content="A music website">
+        <meta name="keywords" content="music, guitar, production, Cheltenham">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="../StuartCreedMusicStyleSheet.css">
+        
+        <!-- jQuery Load --->
+        
+        <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.js"
+			  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+			  crossorigin="anonymous"></script>
+        <script>
+        window.JQuery || document.write('<script src="../jquery-3.4.1.slim.js"><\/script>')
+        </script>
+        
+    </head>
+    
+    <body>
+            <header>
+                    <nav>
+                        <ul class="navlist" id="main">
+                            
+                            <li class="MenuItem"> 
+                                <a id="Home" class="MenuItemLinks unclicked" href="../index.html"><i class="fas fa-igloo"></i></a>
+                            </li>
+                            <li class="MenuItem"> 
+                                <a id="Music" class="MenuItemLinks clicked undropped"><i class="fas fa-headphones-alt"></i></a>
+                            </li>
+                            <li class="MenuItem"> 
+                                <a id="History" class="MenuItemLinks unclicked" href="../History/History.html"><i class="fas fa-history"></i></a>
+                            </li>
+                            <li class="MenuItem">
+                                <a id="Contact" class="MenuItemLinks unclicked" href="../Contact/Contact.html"><i class="fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                        
+                        <ul id="MusicDropDown" class="animated fadeInTop">    
+                            <li class="MenuItemDropDown"> 
+                                <a id="SubtleCulpritsAnchor" class="MenuItemLinks unclicked" href="MusicSubtleCulprits.html">Subtle Culprits</a>
+                            </li>
+                            <li class="MenuItemDropDown"> 
+                                <a id="LowerLovedayAnchor" class="MenuItemLinks unclicked" href="MusicLowerLoveday.html">Lower Loveday</a>
+                            </li>
+                            <li class="MenuItemDropDown"> 
+                                <a id="PersonalAnchor" class="MenuItemLinks unclicked" href="MusicPersonal.html">Personal</a>
+                            </li>
+                        </ul>
+                    </nav> 
+            </header>
+        
+            <div id="MainBodyofPage">
+                <div class="containercentered">
+                    <div class="MusicFramesContainer animated fadeInTop">
+                        <div class="holds-the-iframe">
+                            <iframe src="https://open.spotify.com/embed/track/3Q0cPavBT586lPM9rl5H9g" width="350" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media" class="roundedCorners"></iframe>
+                        </div>
+                        <div class="holds-the-iframe">
+                            <iframe src="https://open.spotify.com/embed/track/3WWBXGLJidcYQG6LBu48AW" width="350" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media" class="roundedCorners"></iframe>
+                        </div>
+                        <div class="holds-the-iframe">
+                            <iframe src="https://open.spotify.com/embed/track/3fiBIW9IRShVpOxm0J8Ccv" width="350" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media" class="roundedCorners"></iframe>
+                        </div>
+                        <div class="holds-the-iframe">
+                        <iframe src="https://open.spotify.com/embed/track/1GB4ncmMNfgEQYKqVGU6wt" width="350" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media" class="roundedCorners"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        
+            <script src="../StuartCreedMusicJavascriptMusicDropdown.js"></script>
+    </body>
+    
+</html>

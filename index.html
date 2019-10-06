@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Stuart Creed Music</title>
+        
+        <meta name="description" content="A music website">
+        <meta name="keywords" content="music, guitar, production, Cheltenham">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="StuartCreedMusicStyleSheet.css">
+        
+        <!-- jQuery Load --->
+        
+        <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.js"
+			  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+			  crossorigin="anonymous"></script>
+        <script>
+        window.JQuery || document.write('<script src="jquery-3.4.1.slim.js"><\/script>')
+        </script>
+        
+    </head>
+    
+    <body>
+        <nav>
+            <ul id="main">    
+                <li class="MenuItem"> 
+                    <a id="Home" class="MenuItemLinks clicked" href="index.html"><i class="fas fa-igloo"></i></a>
+                </li>
+                <li class="MenuItem"> 
+                    <a id="Music" class="MenuItemLinks unclicked undropped"><i class="fas fa-headphones-alt"></i></a>
+                </li>
+                <li class="MenuItem">
+                    <a id="History" class="MenuItemLinks unclicked" href="History/History.html">
+                        <i class="fas fa-history"></i>
+                    </a>
+                </li>
+                <li class="MenuItem">
+                    <a id="Contact" class="MenuItemLinks unclicked" href="Contact/Contact.html"><i class="fas fa-envelope"></i></a>
+                </li>
+            </ul>
+                        
+            <ul id="MusicDropDown" class="animated fadeInTop">    
+                <li class="MenuItemDropDown">
+                    <a id="SubtleCulpritsAnchor" class="MenuItemLinks unclicked" href="Music/MusicSubtleCulprits.html">Subtle Culprits</a>
+                </li>
+                <li class="MenuItemDropDown"> 
+                    <a id="LowerLovedayAnchor" class="MenuItemLinks unclicked" href="Music/MusicLowerLoveday.html">Lower Loveday</a>
+                </li>
+                <li class="MenuItemDropDown"> 
+                    <a id="PersonalAnchor" class="MenuItemLinks unclicked" href="Music/MusicPersonal.html">Personal</a>
+                </li>
+            </ul>
+        </nav> 
+            
+        <div id="MainBodyofPage">
+                <!--- First page the user sees section -->
+                <div class="slider">
+                    <img class="fullsize animated fadeInTop slide" id="topImage1" src="Images/GuitarPicture2Small.jpg">
+                    <img class="fullsize animated fadeInTop slide" id="topImage2" src="Images/GuitarPicture1.jpg">
+                </div>
+                <div class="sliderMobile">
+                    <img class="fullsize animated fadeInTop slide" id="topImageSmall1" src="Images/GuitarPicture1Small.jpg">
+                    <img class="fullsize animated fadeInTop slide" id="topImageSmall2" src="Images/GuitarPicture2Small.jpg">
+                </div>
+            
+                <!--Three buttons on bottom-->
+            
+                <!-- information -->
+            
+                <div class="titleAlignLeft">
+                    <span>About</span>
+                </div>
+                <div class="textBoxesOuterAlignLeft">
+                    <div class="textBoxesInnerAlignLeft subTextBoxes marginForAlignedBoxes">
+                        <img class="textBoxesImagesAlignRight" src="Images/ProfilePicture.jpg">
+                        <p>Welcome to my archive of music ventures thus far. </p>
+                        <p>After dabbling in the art of music for 17 years I would say I consider myself to be at a level of an experienced guitar player and an amateur producer. To explore my musical journey, please navigate to my <a href=History/History.html class="leftLink">history section</a>.</p>
+                        <p>To listen to some of the music I have been involved with have a listen to my <a href="" id="musicLink" class="leftLink">music section</a>.</p>
+                        <p>Please don't hesitate to get in <a href="Contact/Contact.html" class="leftLink">touch</a> if you are interested in collaborating in any musical projects.</p>
+                    </div>
+                </div>
+            
+                <div class="titleAlignRight">
+                    <span>Bands</span>
+                </div>
+                <div class="textBoxesOuterAlignRight">
+                    <div class="textBoxesInnerAlignRight marginForAlignedBoxes">
+                        <div class="subTextBoxes" id="lowerLovedaySection">    
+                            <img src="Images/LowerLovedayIcon.jpg" class="textBoxesImagesAlignLeft"><img>
+                            <p class="headerWithinBox">LOWER LOVEDAY</p>
+                                <p>As the bassist, I took part in some of the biggest gigs of my music career. I was not involved in the production of the <a href="Music/MusicLowerLoveday.html">music</a>, but I was involved in some of the development of ideas in the live performances of later singles. The band was founded by the drummer Tom Garbett and Mark Washington. Chris Francis, the guitarist, joined at the same time as me, but knew the other members previously. The band is based in Evesham, so we endeavoured to play as many gigs as we could in the surrounding area. My last gig with the band was with on the 10th September 2018, supporting <a href="https://open.spotify.com/artist/3Z40kLBFU7C8532e2YLE9t">Only The Poets</a> at the <a href="https://www.thelouisiana.net/">Louisiana</a>.
+                                <br><br>
+                                <a href="https://open.spotify.com/artist/32uwvjulWxUc90gc7bPXMz"><i class="fab fa-spotify iconInBoxes"></i></a>
+                                <a href="https://www.facebook.com/lowerloveday/"><i class="fab fa-facebook-f iconInBoxes"></i></a>
+                                <a href="https://soundcloud.com/lowerloveday"><i class="fab fa-soundcloud iconInBoxes"></i></a>
+                                <a href="https://www.youtube.com/channel/UClGDR9XIPOo96KRox090yTg"><i class="fab fa-youtube iconInBoxes"></i></a>
+                                <a href="http://www.lowerloveday.com"><i class="fas fa-external-link-alt iconInBoxes"></i></a>
+                                <a href="https://twitter.com/lower_loveday?lang=en"><i class="fab fa-twitter iconInBoxes"></i></a>
+                                <a href="https://www.instagram.com/lowerloveday/"><i class="fab fa-instagram iconInBoxes"></i></a>
+                                <br><br>
+                        </div>
+                        <div class="subTextBoxes" id="subtleCulrpitsSubTextBox">
+                            <img src="Images/SubtleCulpritsIcon.jpg" class="textBoxesImagesAlignLeft"><img>
+                            <p class="headerWithinBox">SUBTLE CULPRITS</p>
+                                <p>Being the bassist in this band gave me more gigging confidence and an experience of recording in a studio. The band was founded by Vinny Morello and Blackbeard Hebburn. The singer/guitarist Alex Morgan joined slightly later and I was last to complete the set. I played my first full band gig with Subtle Culprits.
+                                <br><br>
+                                <a href="https://open.spotify.com/artist/2Y6H8iOdOLxMFYJpBtDQdE"><i class="fab fa-spotify iconInBoxes"></i></a>
+                                <a href="https://www.facebook.com/SubtleCulprits/"><i class="fab fa-facebook-f iconInBoxes"></i></a>
+                                <a href="https://soundcloud.com/subtleculprits"><i class="fab fa-soundcloud iconInBoxes"></i></a>
+                                <a href="https://www.youtube.com/channel/UCknuYEXNWCOtn2I1mBYpHiA"><i class="fab fa-youtube iconInBoxes"></i></a>
+                                <br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="titleAlignLeft">
+                    <span>Equipment</span>
+                </div>
+                <div class="textBoxesOuterAlignLeft">
+                    <div class="textBoxesInnerAlignLeft subTextBoxes marginForAlignedBoxes">
+                        <!-- make these captions and the pictures flex -->
+                        <p>White American Standard Fender P Bass</p>
+                        <p>Sigma Acoustic Guitar with Billy Bragg Soundhole pickups installed</p>
+                        <p>Ashdown Bass Amp</p>
+                        <p>Ashdown Bass Head</p>
+                    </div>
+                </div>
+        </div>
+        
+        <!-- Other JQuery --->
+
+        <script src="StuartCreedMusicJavascript.js"></script>
+        <script src="StuartCreedMusicJavascriptMusicDropdown.js"></script>
+        
+    </body>
+    
+</html>

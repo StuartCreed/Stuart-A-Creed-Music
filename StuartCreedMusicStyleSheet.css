@@ -1,97 +1,437 @@
+/* All - removes unwanted browser styling on the margin on ul elements */
+
+    * { 
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        }
+
 /*Background*/
             
     body {
-        background-color: whitesmoke;
-        padding: 0px 0px 0px 0px;
-        margin: 0px 0px 0px 0px;
+        background-color: #20232a;
+    }
+
+    #MainBodyofPage {
+        text-align: center;
+    }
+
+/*Text*/
+
+    p {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        padding: 15px 20px 15px 20px;
+    }
+
+    .titleAlignLeft {
+        color: #00c07f;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        padding: 5px;
+        text-align: left;
+        margin-left: 20px;  
+    }
+
+    .titleAlignRight {
+        color: #00c07f;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        padding: 5px;
+        text-align: right;
+        margin-right: 20px;
     }
             
 /*Fixed Header*/
-                
+
         .MenuItem {
-            font-size: 25px;
+            font-size: 23px;
             display: inline-block;
             vertical-align: middle;
-            padding: 0px 50px 0px 50px;
+            padding: 16px 50px 16px 50px;
+        }
+
+        .MenuItemDropDown {
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            display: inline-flex;
+            vertical-align: middle;
+            padding: 16px 50px 16px 50px;
+        }
+
+        #MusicDropDown {
+            z-index: 9999;
+            background-color: inherit;
+            vertical-align: middle;
+        }
+
+        #MusicDropDown .MenuItems {
+            color: #fff;
+        }
+
+        @media only screen and (max-width: 800px) {
+                .MenuItemDropDown {
+                    display: block;
+                }
         }
 
         nav {
             width: 100%;
             position: fixed;
+            background-color: #20232a;
+            /*#4950578*/
+            text-align: center;
             top: 0px;
             left: 0px;
-            -webkit-box-shadow: 0 6px 5px rgba(57, 63, 72, 0.3);
-            -moz-box-shadow: 0 6px 5px rgba(57, 63, 72, 0.3);
-            box-shadow: 0 6px 5px rgba(57, 63, 72, 0.3);
-            background-color: whitesmoke;
-            text-align: center;
-        }
+            z-index: 9999;
+            vertical-align: middle;
+        }   
             
         .MenuItemLinks {
             text-decoration: none;
-            color: #006E6D;
-            -webkit-transition: 0.5s all ease;
-            -moz-transition: 0.5s all ease;
-            -o-transition: 0.5s all ease;
-            transition: 0.5s all ease;
+            -webkit-transition: 0.2s all ease;
+            -moz-transition: 0.2s all ease;
+            -o-transition: 0.2s all ease;
+            transition: 0.2s all ease;
         }
+
+        #main {
+            border-bottom: 2px solid #00c07f;
+        }
+
+        /* Small screen:mobile */
+            @media only screen and (max-width: 800px) {
+                .MenuItem {
+                    padding: 20px 20px 20px 20px;
+                }
+            }
 
     /*Hover effects*/
 
-        .MenuItemLinks:hover{
-            color: #FC4A1A; 
+        .MenuItemLinks:hover {
+            color: #00c07f;
         }
 
+        #MusicDropDown .MenuItemLinks:hover {
+            color: #00c07f;
+        }
 
-/*Content Container*/
+    /*Focus Effects*/
+        
+        .MenuItemLinks:focus{
+            color: #00c07f;
+        }
 
-    #ContentContainer {
-        margin-top: 63px;
-    }
+       #MusicDropDown .MenuItemLinks:focus {
+            color: #00c07f;
+        }
+
+    /* Clicked/unclicked icons css classes*/
+
+        .clicked {
+            color: #00c07f;
+        }
+
+        .unclicked {
+            color: #777; 
+        }
+
+        #MusicDropDown .unclicked {
+            color: #fff;
+        }
 
 /*Music*/
 
-    #SpotifyFramesContainer {
-        margin: 100px 0px 0px 0px;
+    .MusicFramesContainer {
         display: inline-block;
     }
 
-    #SpotifyFramesContainerOuter {
-        text-align: center;
+    #MusicDropDown {
+        display: none;
     }
 
-/*Soundcloud*/
+    .roundedCorners {
+        border-radius: 10px !important;
+        margin: 20px 20px 20px 20px;
+    }
 
-    #SoundcloudFramesContainer {
-        margin: 100px 0px 0px 0px;
+    @media only screen and (max-width: 800px) {
+       .roundedCorners {
+            width: 250px;
+            height: 300px;
+        }
+    }
+
+    .holds-the-iframe {
+        display: inline-flex;
+        background: url("Images/Spinner-2.2s-74px.gif") center center no-repeat;
+    }
+
+/*Home*/
+
+    /*Text Boxes, Arrows and Images*/
+
+    .slide {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .textBoxesInnerAlignLeft {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        display: block;
+        text-align: left;
+        background-color: #20232a;
+    }   
+
+    .marginForAlignedBoxes {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .textBoxesInnerAlignRight {
         display: inline-block;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+        width: 100%;
+        background-color: #00c07f;
+    }
+    
+    .textBoxesOuterAlignRight {
+        text-align: right;
     }
 
-    #SoundcloudContainerOuter {
-        text-align: center;
-    }
-
-/*Info*/
-
-    #InfoPhotoFramesContainer {
-        margin: 30px 0px 0px 0px;
-        display: inline-block;
-    }
-
-    #InfoPhotoFramesContainerOuter {
-        text-align: center;
-    }
-
-    .InfoPictures {
-        height: 300px;
+    .textBoxesImagesAlignRight {
+        float: right;
+        height: 100px;
         width: auto;
-        margin: 10px;
     }
 
-/*Website content*/
+    .textBoxesImagesAlignLeft {
+        float: left;
+        height: 100px;
+        width: auto;
+    }
 
-    p {
-        font-family: 'Roboto', sans-serif;
+    #subtleCulrpitsSubTextBox {
+        border-top: 1px solid #777;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .subTextBoxes img {
+            display: none;
+        }
+        
+        .headerWithinBox {
+            padding: 20px 20px 0px 0px;
+            margin-top: 20px;
+        }
+    }
+
+    .iconInBoxes {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .headerWithinBox {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 40px;
+        padding: 0px 20px 0px 0px;
+    }
+
+    #LowerLovedaymargin {
+        margin-bottom: 50px;
+    }
+
+    /*Images*/
+
+    .fullsize {
+        z-index: -9999;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .OtherImages {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    /* Animation */
+
+        .animated {
+            -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    }
+
+         @-webkit-keyframes fadeInTop {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateY(0);
+            }
+         }
+         @keyframes fadeInTop {
+            0% {
+               opacity: 0;
+               transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateY(0);
+            }
+         }
+
+         .fadeInTop {
+            -webkit-animation-name: fadeInTop;
+            animation-name: fadeInTop;
+         }
+
+        /*Page Links*/
+
+        p a:link {
+            color: #20232a;
+        }
+
+        p a:visited {
+            color: #20232a;
+            font-weight: bold;
+        }
+
+        .leftLink:link {
+            color: #00c07f;
+        }
+
+        .leftLink:visited {
+            color: #00c07f;
+        }
+
+/*History*/
+
+    #HistoryInformation {
+        margin: 70px 10% 50px 10%;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+    }
+
+    .HistoryInformationSection {
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+
+    .HistorySectionHeader {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 40px;
+        padding: 15px 20px 15px 20px;
+    }
+
+    .historyPictures {
+        border-radius: 50px;
+        height: auto;
+        width: 80%;
+        display: block;
+        padding: 30px 20px 30px 20px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        #HistoryInformation {
+            margin: 70px 2% 50px 2%;
+        }
+        
+        .HistorySectionHeader {
+            font-size: 25px;
+        }
+
+    }
+
+/*Contact*/
+
+    #contactInformation {
+        display: inline-flex;
+        flex-wrap: wrap;
+        color: #fff;
+        align-self: center;
+    }
+
+    .contactForm {
+        padding: 0px 5vw 0px 5vw;
         font-size: 20px;
-        color: #FC4A1A; 
+        font-family: 'Roboto Condensed', sans-serif;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: nowrap;
+        width: 75vw;
+        margin-top: 60px;
     }
+
+    .formMessage {
+        font-size: 20px;
+    }
+
+    .contactForm button {
+        background-color: #00c07f;
+        padding: 10px;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Roboto Condensed', sans-serif;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }   
+
+    input {
+        font-size: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-top: 20px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    textarea {
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 100px;
+        background-color: #fff;
+    }
+
+    .centeredContainer {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    @media only screen and (max-width: 800px) {
+        input {
+            margin-top: 10px; 
+        }
+        
+        textarea {
+            margin-top: 10px; 
+        }
+        
+        .contactForm {
+            margin-top: -40px;
+        }
+
+        .contactForm p {
+            padding: 5px 20px 5px 20px;
+        }
+    }
+
+    /*Contact Links*/
+
+        .contactIcon:link {
+            color: #fff;
+        }
+
+        .contactIcon:visited {
+            color: #00c07f;
+        }
